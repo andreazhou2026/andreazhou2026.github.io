@@ -40,15 +40,17 @@ p.desc {
 .buttontab {
     background-color: aqua;
     border: 3px solid pink;
-    /* display: active; */
 }
 
 .picstab {
     background-color: beige;
     border: 3px solid pink;
-    /* display: none; */
 }
 
 .startbut {
     display: active;
+}
+
+.startoth {
+    display: none;
 }
