@@ -33,10 +33,10 @@
 <script>
     function openTab(evt, tabName) {
         var i, tabclick, tablinks;
-        tabclick = document.getElementsByClassName("tabclick");
-        for (i = 0; i < tabclick.length; i++) {
-            tabclick[i].style.display = "none";
-        }
+        // tabclick = document.getElementsByClassName("tabclick");
+        // for (i = 0; i < tabclick.length; i++) {
+        //     tabclick[i].style.display = "none";
+        // }
         tablinks = document.getElementsByClassName("tablinks");
         for (i=0; i < tablinks.length; i++) {
             tablinks[i].className = tablinks[i].className.replace(" active", "");
