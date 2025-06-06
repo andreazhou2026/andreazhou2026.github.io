@@ -1,7 +1,5 @@
 body {
     background-color: lightcyan;
-    padding: 0;
-    margin: 0;
 }
 
 h1 {
@@ -24,6 +22,8 @@ p.desc {
 }
 
 h2 {
+    padding:0;
+    margin:0;
     color: crimson;
     font-family: fantasy;
     font-weight: bold;
@@ -57,8 +57,9 @@ h2 {
 }
 
 img {
-    width: 400px;
+    width: 600px;
     height: auto;
+    align-items: center;
 }
 
 /* .buttontab {
@@ -90,5 +91,4 @@ ul {
     list-style-type: square;
     margin:0;
     padding:0;
-    font-family: fantasy;
 }
