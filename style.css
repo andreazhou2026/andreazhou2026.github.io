@@ -46,4 +46,5 @@ p.desc {
 .picstab {
     background-color: beige;
     border: 3px solid pink;
+    display: none;
 }
