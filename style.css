@@ -100,8 +100,8 @@ li {
 }
 
 .button {
-    background-color:darkgray;
-    color:white;
+    background-color:rgb(111, 245, 255);
+    color:black;
     text-align: center;
     font-size: 15px;
 }
