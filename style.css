@@ -97,3 +97,10 @@ li {
     list-style-type: square;
     font-family: fantasy;
 }
+
+.button {
+    background-color:darkslategray;
+    color:white;
+    text-align: center;
+    font-size: 15px;
+}
