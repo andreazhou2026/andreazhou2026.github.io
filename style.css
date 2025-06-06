@@ -17,6 +17,13 @@ p.desc {
     font-family: fantasy;
 }
 
+h2 {
+    color: hotpink;
+    font-family: fantasy;
+    font-weight: bold;
+    font-size: 20px;
+}
+
 .tab {
     overflow: hidden;
     border: 2px solid black;
@@ -43,7 +50,7 @@ p.desc {
     color: white;
 }
 
-.buttontab {
+/* .buttontab {
     background-color: aqua;
 }
 
@@ -57,7 +64,7 @@ p.desc {
 
 .messagetab {
     background-color: burlywood;
-}
+} */
 
 .tabclick {
     display: none;
