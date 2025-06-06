@@ -22,8 +22,7 @@ p.desc {
 }
 
 h2 {
-    padding:5px;
-    margin:5px;
+    padding:15px;
     color: crimson;
     font-family: fantasy;
     font-weight: bold;
@@ -88,10 +87,10 @@ img {
     margin: 0;
 } */
 
-ul {
+/* ul {
     margin:0;
     padding:0;
-}
+} */
 
 li {
     list-style-type: square;
