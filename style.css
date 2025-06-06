@@ -27,6 +27,8 @@ p.desc {
     background-color: inherit;
     float: left;
     transition: 0.3s;
+    padding: 10px 20px;
+    color:cadetblue;
 }
 
 .tab button:hover {
@@ -34,17 +36,15 @@ p.desc {
 }
 
 .tab button.active {
-    background-color: purple;
+    background-color: blueviolet;
 }
 
 .buttontab {
     background-color: aqua;
-    border: 3px solid pink;
 }
 
 .picstab {
     background-color: beige;
-    border: 3px solid pink;
 }
 
 .ideastab {
@@ -58,7 +58,3 @@ p.desc {
 .tabclick {
     display: none;
 }
-
-/* .tablinks {
-    display: none;
-} */
