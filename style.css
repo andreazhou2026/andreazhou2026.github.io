@@ -22,8 +22,8 @@ p.desc {
 }
 
 h2 {
-    padding:0;
-    margin:0;
+    padding:5px;
+    margin:5px;
     color: crimson;
     font-family: fantasy;
     font-weight: bold;
@@ -88,7 +88,10 @@ img {
 } */
 
 ul {
-    list-style-type: square;
     margin:0;
     padding:0;
+}
+
+li {
+    list-style-type: square;
 }
