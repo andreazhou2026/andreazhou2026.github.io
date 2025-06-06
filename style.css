@@ -55,22 +55,26 @@ h2 {
 }
 
 .buttontab {
-    background-color: lightgray;
+    background-color: rgb(180, 211, 215);
 }
 
 .picstab {
-    background-color: lightgray;
+    background-color: rgb(180, 211, 215);
 }
 
 .ideastab {
-    background-color: lightgray;
+    background-color: rgb(180, 211, 215);
 }
 
 .messagetab {
-    background-color: lightgray;
+    background-color: rgb(180, 211, 215);
 }
 
 .tabclick {
     display: none;
-    background-color: lightgray;
+    background-color: rgb(180, 211, 215);
+}
+
+.nav {
+    margin: 0;
 }
