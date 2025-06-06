@@ -61,6 +61,7 @@ img {
     height: auto;
     margin: auto;
     display: block;
+    padding-bottom: 2px;
 }
 
 /* .buttontab {
