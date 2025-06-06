@@ -55,10 +55,10 @@ p.desc {
     background-color: burlywood;
 }
 
-/* .tabclick {
-    display: none;
-} */
-
-.tablinks {
+.tabclick {
     display: none;
 }
+
+/* .tablinks {
+    display: none;
+} */
