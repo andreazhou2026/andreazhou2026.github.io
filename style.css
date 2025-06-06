@@ -22,7 +22,8 @@ p.desc {
 }
 
 h2 {
-    padding:15px;
+    padding-top: 2px;
+    padding-bottom: 2px;
     color: crimson;
     font-family: fantasy;
     font-weight: bold;
@@ -94,4 +95,5 @@ img {
 
 li {
     list-style-type: square;
+    font-family: fantasy;
 }
