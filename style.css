@@ -40,11 +40,25 @@ p.desc {
 .buttontab {
     background-color: aqua;
     border: 3px solid pink;
-    display: active;
 }
 
 .picstab {
     background-color: beige;
     border: 3px solid pink;
+}
+
+.ideastab {
+    background-color: aliceblue;
+}
+
+.messagetab {
+    background-color: burlywood;
+}
+
+.tabclick {
+    display: none;
+}
+
+.tablinks {
     display: none;
 }
