@@ -54,8 +54,8 @@ h2 {
     color: white;
 }
 
-.buttontab {
-    background-color: rgb(232, 253, 253);
+/* .buttontab {
+    background-color: ;
 }
 
 .picstab {
@@ -68,13 +68,13 @@ h2 {
 
 .messagetab {
     background-color: rgb(232, 253, 253);
-}
+} */
 
 .tabclick {
     display: none;
-    background-color: rgb(232, 253, 253);
+    /* background-color: rgb(232, 253, 253); */
 }
 
-.nav {
+/* .nav {
     margin: 0;
-}
+} */
