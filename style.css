@@ -54,22 +54,23 @@ h2 {
     color: white;
 }
 
-/* .buttontab {
-    background-color: aqua;
+.buttontab {
+    background-color: lightgray;
 }
 
 .picstab {
-    background-color: beige;
+    background-color: lightgray;
 }
 
 .ideastab {
-    background-color: aliceblue;
+    background-color: lightgray;
 }
 
 .messagetab {
-    background-color: burlywood;
-} */
+    background-color: lightgray;
+}
 
 .tabclick {
     display: none;
+    background-color: lightgray;
 }
