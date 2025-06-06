@@ -44,7 +44,7 @@
 
 <div id="Pics!" class="picstab tabclick">
     <h2>Random (open-source) pics!</h2>
-    <input onclick="displayImage();" type="button" class="button" value="Display Random Image">
+    <input onclick="displayImage();" type="button" class="button" value="Click Me">
     <img src="https://plus.unsplash.com/premium_photo-1667761634654-7fcf176434b8?q=80&w=2937&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" name="canvas" />
 </div>
 
@@ -106,7 +106,7 @@
 </script>
 
 <script>
-    var imagesArray = ["https://plus.unsplash.com/premium_photo-1667761634654-7fcf176434b8?q=80&w=2937&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://plus.unsplash.com/premium_vector-1689096654202-bc3a352d0637?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://images.unsplash.com/photo-1496715976403-7e36dc43f17b?q=80&w=2848&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://plus.unsplash.com/premium_photo-1685868556097-641c237f3fa5?q=80&w=3128&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://plus.unsplash.com/premium_vector-1722003205986-386076cec55f?q=80&w=3114&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"];
+    var imagesArray = ["https://plus.unsplash.com/premium_photo-1667761634654-7fcf176434b8?q=80&w=2937&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://plus.unsplash.com/premium_vector-1689096654202-bc3a352d0637?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://images.unsplash.com/photo-1496715976403-7e36dc43f17b?q=80&w=2848&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://plus.unsplash.com/premium_photo-1685868556097-641c237f3fa5?q=80&w=3128&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://plus.unsplash.com/premium_vector-1722003205986-386076cec55f?q=80&w=3114&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://images.pexels.com/photos/9029801/pexels-photo-9029801.jpeg?auto=compress&cs=tinysrgb&w=1200", "https://images.pexels.com/photos/12081252/pexels-photo-12081252.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", "https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=1600", "https://images.pexels.com/photos/5078593/pexels-photo-5078593.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"];
     function displayImage() {
         var num = Math.floor(Math.random() * (imagesArray.length+1));
         document.canvas.src = imagesArray[num];
