@@ -50,6 +50,7 @@ h2 {
     font-size: 15px;
     width: 200px;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 .tab button:hover {
@@ -88,4 +89,5 @@ li {
     transition-delay: 0;
     width: 150px;
     box-sizing: border-box;
+    cursor: pointer;
 }
