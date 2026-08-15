@@ -8,7 +8,8 @@ h1 {
     font-family: fantasy;
     font-size: 40px;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 
 p {
@@ -21,6 +22,7 @@ p.desc {
     font-family: fantasy;
     font-size: 25px;
     margin-top: 0px;
+    padding-bottom: 0px;
 }
 
 h2 {
