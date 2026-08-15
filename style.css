@@ -16,10 +16,9 @@ p {
 
 p.desc {
     color:hotpink;
-    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
     font-size: 25px;
     font-family: fantasy;
-    text-align: center;
 }
 
 h2 {
