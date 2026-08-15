@@ -19,6 +19,7 @@
     <button class="tablinks" onclick="openTab(event, 'Pics!')">Pictures</button>
     <button class="tablinks" onclick="openTab(event, 'Ideas!')">Motivation</button>
     <button class="tablinks" onclick="openTab(event, 'trivia')">Trivia</button>
+    <button class="tablinks" onclick="openTab(event, 'sorting')">Sorting</button>
 </div>
 
 <div id="WYR" class="buttontab tabclick">
@@ -85,7 +86,7 @@
     </ul>
 </div>
 
-<div id="trivia" class="ideastab tabclick">
+<div id="trivia" class="triviatab tabclick">
     <h2>Welcome to Trivia. Each question has four potential answers. Click the right one to get a point. There are 5 total questions.</h2>
     
     <p id="question"></p>
@@ -96,6 +97,20 @@
     <button class="answer"></button>
 
     <p id="score"></p>
+</div>
+
+<div id="sorting" class="triviatab tabclick">
+    <h2>Sort the numbers from least to greatest.</h2>
+
+    <div id="numbers">
+        <div class="number" draggable="true">4</div>
+        <div class="number" draggable="true">1</div>
+        <div class="number" draggable="true">3</div>
+        <div class="number" draggable="true">2</div>
+    </div>
+
+    <button id="check">Check Answer</button>
+    <p id="trivia_result"></p>
 </div>
 
 <script>
@@ -198,6 +213,46 @@
                 });
             }
         })
+    })
+</script>
+
+<script>
+    const numbers = document.querySelectorAll(".number");
+    let draggedItem = null;
+
+    numbers.forEach(number => {
+        number.addEventListener("dragstart", () => {
+            draggedItem = number;
+        });
+    });
+
+    numbers.forEach(number => {
+        number.addEventListener("dragover", event => {
+            event.preventDefault();
+        });
+    });
+
+    numbers.forEach(number => {
+        number.addEventListener("drop", () => {
+            if (draggedItem !== number) {
+                number.parentNode.insertBefore(draggedItem, number);
+            }
+        });
+    });
+
+    document.getElementById("check").addEventListener("click", () => {
+        const numbers = document.querySelectorAll(".number");
+        const order = [];
+
+        numbers.forEach(number => {
+            order.push(Number(number.textContent));
+        });
+
+        if (order.join(",") === "1,2,3,4") {
+            document.getElementById("result").textContent = "Correct!";
+        } else {
+            document.getElementById("result").textContent = "Nope, try again.";
+        }
     })
 </script>
 
