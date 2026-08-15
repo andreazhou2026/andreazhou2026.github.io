@@ -8,8 +8,7 @@ h1 {
     font-family: fantasy;
     font-size: 40px;
     font-weight: bold;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
+    margin-bottom: 10px;
     line-height: 1;
 }
 
@@ -21,8 +20,7 @@ p.desc {
     color:hotpink;
     text-align: center;
     font-size: 25px;
-    margin-top: 0px;
-    padding-bottom: 0px;
+    margin-bottom: 10px;
     line-height: 1;
 }
 
