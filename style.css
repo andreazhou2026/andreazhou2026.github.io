@@ -10,6 +10,7 @@ h1 {
     font-weight: bold;
     margin-bottom: 0px;
     padding-bottom: 0px;
+    line-height: 1;
 }
 
 p {
@@ -19,10 +20,10 @@ p {
 p.desc {
     color:hotpink;
     text-align: center;
-    font-family: fantasy;
     font-size: 25px;
     margin-top: 0px;
     padding-bottom: 0px;
+    line-height: 1;
 }
 
 h2 {
