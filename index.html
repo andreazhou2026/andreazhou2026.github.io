@@ -180,11 +180,11 @@
 
     answerButtons.forEach(button => {
         button.addEventListener("click", () => {
-            if (button.textContent === questions[currentQuestion.correct]) {
+            if (button.textContent === questions[currentQuestion].correct) {
                 score++;
                 alert("Correct!")
             } else {
-                alert("Wrong! The answer was " + questions[currentQuestion.correct]);
+                alert("Incorrect! The answer was " + questions[currentQuestion].correct + ".");
             }
 
             currentQuestion++;
