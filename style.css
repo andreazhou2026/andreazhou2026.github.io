@@ -54,7 +54,7 @@ h2 {
 
 .tab button:hover {
     background-color: lightpink;
-    color:white
+    color:black;
 }
 
 .tab button.active {
