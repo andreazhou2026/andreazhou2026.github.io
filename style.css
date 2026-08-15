@@ -14,6 +14,7 @@ h1 {
 
 p {
     font-family:fantasy;
+    line-height: 1;
 }
 
 p.desc {
@@ -21,7 +22,6 @@ p.desc {
     text-align: center;
     font-size: 25px;
     margin-bottom: 10px;
-    line-height: 1;
 }
 
 h2 {
@@ -67,35 +67,9 @@ img {
     padding-bottom: 2px;
 }
 
-/* .buttontab {
-    background-color: ;
-}
-
-.picstab {
-    background-color: rgb(232, 253, 253);
-}
-
-.ideastab {
-    background-color: rgb(232, 253, 253);
-}
-
-.messagetab {
-    background-color: rgb(232, 253, 253);
-} */
-
 .tabclick {
     display: none;
-    /* background-color: rgb(232, 253, 253); */
 }
-
-/* .nav {
-    margin: 0;
-} */
-
-/* ul {
-    margin:0;
-    padding:0;
-} */
 
 li {
     list-style-type: square;
