@@ -192,7 +192,7 @@
             if (currentQuestion < questions.length) {
                 showQuestion();
             } else {
-                questionElement.textContent = "Quiz finished! Score: " + score +"\nIf you'd like to retake the quiz, you may refresh the page.";
+                questionElement.textContent = "Quiz finished! Score: " + score +"<br>If you'd like to retake the quiz, you may refresh the page.";
                 answerButtons.forEach(button => {
                     button.style.display = "none";
                 });
