@@ -26,11 +26,12 @@ p.desc {
 
 h2 {
     padding-top: 2px;
-    padding-bottom: 2px;
+    padding-bottom: 20px;
     color: crimson;
     font-family: fantasy;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
+    line-height: 1;
 }
 
 .tab {
