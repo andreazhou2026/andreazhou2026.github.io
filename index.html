@@ -18,6 +18,7 @@
     <button class="tablinks" onclick="openTab(event, 'WYR')">Would you rather?</button>
     <button class="tablinks" onclick="openTab(event, 'Pics!')">Pictures</button>
     <button class="tablinks" onclick="openTab(event, 'Ideas!')">Motivation</button>
+    <button class="tablinks" onclick="openTab(event, 'Trivia')">Trivia</button>
 </div>
 
 <div id="WYR" class="buttontab tabclick">
@@ -84,6 +85,19 @@
     </ul>
 </div>
 
+<div id="Trivia" class="ideastab tabclick">
+    <h2>Welcome to Trivia. Each question has four potential answers. Click the right one to get a point. There are 5 total questions.</h2>
+    
+    <p id="question"></p>
+
+    <button class="answer"></button>
+    <button class="answer"></button>
+    <button class="answer"></button>
+    <button class="answer"></button>
+
+    <p id="score"></p>
+</div>
+
 <script>
     function openTab(evt, tabName) {
         var i, tabclick, tablinks;
@@ -116,6 +130,73 @@
         var num = Math.floor(Math.random() * (imagesArray.length));
         document.getElementById("canvas").src = imagesArray[num];
     }
+</script>
+
+<script>
+    const questions = [
+        { // 1
+            question: "How many bones does a typical adult human skeleton contain?",
+            answers: ["206", "210", "216", "220"],
+            correct: "206"
+        },
+        { // 2
+            question: "How many elements are in the periodic table?",
+            answers: ["107", "114", "118", "121"],
+            correct: "118"
+        },
+        { // 3
+            question: "What is the last play William Shakespeare wrote?",
+            answers: ["Hamlet", "Julius Caesar", "Macbet", "The Tempest"],
+            correct: "The Tempest"
+        },
+        { // 4
+            question: "Who was the first president of the United States?",
+            answers: ["George Washington", "Abraham Lincoln", "John Adams", "Alexander Hamilton"],
+            correct: "George Washington"
+        },
+        { // 5
+            question: "What is the capital city of Australia?",
+            answers: ["Sydney", "Canberra", "Queensland", "Cairns"],
+            correct: "Canberra"
+        }
+    ]
+    
+    const questionElement = document.getElementById("question");
+    const answerButtons = document.querySelectorAll(".answer");
+
+    let currentQuestion = 0;
+    let score = 0;
+
+    function showQuestion() {
+        const question = questions[currentQuestion];
+        questionElement.textContent = question.question;
+
+        for (let i = 0; i < answerButtons.length; i++) {
+            answerButtons[i].textContent = question.answers[i];
+        }
+    }
+
+    showQuestion();
+
+    answerButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            if (button.textContent === questions[currentQuestion.correct]) {
+                score++;
+                alert("Correct!")
+            } else {
+                alert("Wrong! The answer was " + questions[currentQuestion.correct]);
+            }
+
+            currentQuestion++;
+
+            if (currentQuestion < questions.length) {
+                showQuestion();
+            } else {
+                alert("Quiz finished! Score: " + score);
+                alert("You may refresh the page to retake the quiz.")
+            }
+        })
+    })
 </script>
 
 </body>
