@@ -25,10 +25,9 @@ p.desc {
 }
 
 h2 {
-    padding-top: 2px;
+    padding-top: 10px;
     padding-bottom: 5px;
     margin-bottom: 0;
-    margin-top: 0;
     color: crimson;
     font-family: fantasy;
     font-weight: bold;
