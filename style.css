@@ -43,11 +43,11 @@ h2 {
     background-color: inherit;
     float: left;
     transition: 0.3s;
-    padding: 20px 40px;
     color:black;
     font-family: fantasy;
     font-size: 15px;
-    width: 150px;
+    width: 300px;
+    box-sizing: border-box;
 }
 
 .tab button:hover {
