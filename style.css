@@ -47,6 +47,7 @@ h2 {
     color:black;
     font-family: fantasy;
     font-size: 15px;
+    width: 150px;
 }
 
 .tab button:hover {
