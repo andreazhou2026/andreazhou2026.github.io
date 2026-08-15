@@ -45,7 +45,7 @@
     <h2>Each click of the button below will change the image at random. All of the images are copyright-free (under the Unsplash/Unsplash+ license).</h2>
     <input onclick="displayImage();" type="button" class="button" value="Click Me">
     <br><br>
-    <img src="https://plus.unsplash.com/premium_photo-1667761634654-7fcf176434b8?q=80&w=2937&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" name="canvas" />
+    <img id = "canvas" src="https://plus.unsplash.com/premium_photo-1667761634654-7fcf176434b8?q=80&w=2937&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
 </div>
 
 <div id="Ideas!" class="ideastab tabclick">
@@ -114,7 +114,7 @@
         })
     function displayImage() {
         var num = Math.floor(Math.random() * (imagesArray.length));
-        document.canvas.src = imagesArray[num];
+        document.getElementById("canvas").src = imagesArray[num];
     }
 </script>
 
